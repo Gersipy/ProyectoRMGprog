@@ -1,0 +1,73 @@
+package proyecto.pkgfinal;
+
+import javax.swing.JOptionPane;
+ 
+
+
+public class ProyectoFinal {
+            
+    public static void main(String[] args) {
+    int op, op2, op3, op4, op5, op6;
+    
+    do {
+    op = Integer.parseInt(JOptionPane.showInputDialog(null, "Menu principal"+"\n"+"Ingresa la opcion deseada"+"\n"+"1. Aritmetico"+"\n"+"2. Conversiones"+"\n"+"3. Salir"));    
+    
+    switch (op) {
+        
+        case 1:
+        do {
+        op2 = Integer.parseInt(JOptionPane.showInputDialog(null, "Menu aritmetico"+"\n"+"Ingresa la opcion deseada:"+"\n"+"1. Suma"+"\n"+"2. Resta"+"\n"+"3. Multiplicacion"+"\n"+"4. Division"+"\n"+"5. Regresar"));        
+        switch (op2) {
+            case 1: 
+            case 2:
+            case 3:
+            case 4:
+            }
+          } while (op2!=5);
+        break;
+
+        case 2:
+        do {
+        op3 = Integer.parseInt(JOptionPane.showInputDialog(null, "Menu conversiones:"+"\n"+"1. Longitud 1"+"\n"+"2. Masa"+"\n"+"3. Temperatura"+"\n"+"4. Regresar"));    
+        switch (op3) {
+            case 1:
+            op4 = Integer.parseInt(JOptionPane.showInputDialog(null, "Menu conversiones:"+"\n"+"1. Longitud 1"+"\n"+"2. Masa"+"\n"+"3. Temperatura"+"\n"+"4. Regresar"));        
+            
+            switch (op4) {
+                case 1:
+                case 2: 
+                case 3: 
+                case 4: 
+                case 5: 
+            }
+            
+            case 2:
+            op5 = Integer.parseInt(JOptionPane.showInputDialog(null, "Menu conversiones:"+"\n"+"1. Longitud 1"+"\n"+"2. Masa"+"\n"+"3. Temperatura"+"\n"+"4. Regresar"));        
+            
+            switch (op5) {
+                case 1:
+                case 2: 
+                case 3: 
+                case 4: 
+            }
+
+            case 3:
+            op6 = Integer.parseInt(JOptionPane.showInputDialog(null, "Menu conversiones:"+"\n"+"1. Longitud 1"+"\n"+"2. Masa"+"\n"+"3. Temperatura"+"\n"+"4. Regresar"));        
+            
+            switch (op6) {
+                case 1:
+                case 2: 
+                case 3: 
+                case 4: 
+                    
+            }            
+          }
+        } while (op3!=4);
+        
+        break;
+        
+      }     
+    } while (op!=3);   
+    
+  } 
+}
